@@ -1,18 +1,35 @@
 <template>
-  <div id="app">
-    
-  </div>
+    <div id="app">
+          <repair-page v-if="isRepair"></repair-page>
+      <div class="container"  v-if="!isRepair">
+       <span>Other Components</span>
+      </div>
+   </div>
 </template>
 
 <script>
+import Repair from './Repair'
 export default {
   name: 'app',
+  components:{
+     "repair-page":Repair
+  },
   data () {
     return {
+      isRepair:true,
     }
   }
 }
 </script>
+
+
+
+
+
+
+
+
+
 
 <style lang="scss">
 #app {
