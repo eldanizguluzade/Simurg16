@@ -1,0 +1,79 @@
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+header nav {
+  position: fixed !important;
+  background-color: whitesmoke;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+header nav h1 {
+  color: #ff5c4a;
+}
+header nav #navbarNav {
+  justify-content: flex-end;
+}
+header nav #navbarNav a.nav-link {
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+  color: gray;
+  font-size: 0.9rem;
+}
+header nav #navbarNav a.nav-link:hover {
+  color: #FF4530;
+}
+header nav #navbarNav a.nav-link .fa {
+  color: #FF4530;
+}
+header #hslider .carousel-indicators > li {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 20px;
+}
+header #hslider .carousel-inner .carousel-item img {
+  height: 100vh;
+}
+header #hslider .carousel-inner .carousel-item .carousel-caption {
+  bottom: 40%;
+  font-family: "Pacifico", cursive !important;
+}
+header #hslider .carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 3rem;
+}
+header .sponsors {
+  background-color: #e6e6e6;
+  color: gray;
+  text-align: center;
+}
+header .sponsors ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+header .sponsors ul li {
+  margin: 5px;
+}

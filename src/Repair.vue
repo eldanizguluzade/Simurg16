@@ -32,7 +32,6 @@ export default {
 }
 </script>
 
-
 <style lang="css" scoped>
         #container {
             position: relative;
@@ -41,7 +40,7 @@ export default {
             margin: 0;
             font-size:13px;
             box-sizing: border-box;
-            background-image: url(./assets/repair.jpg);
+            background-image: url(./assets/img/repair.jpg);
             background-repeat: no-repeat;
             object-fit: cover;
             background-position-y: bottom;

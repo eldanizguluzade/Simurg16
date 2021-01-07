@@ -1,0 +1,88 @@
+@import "basic";
+@import "mixin";
+@import "variables";
+
+header {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+
+  nav {
+    position: fixed !important;
+    background-color: whitesmoke;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+
+    h1 {
+      color: lighten($text-primary, 5);
+    }
+
+    #navbarNav {
+      justify-content: flex-end;
+
+      a.nav-link {
+        & {
+          font-family: 'Montserrat', sans-serif;
+          transition: .3s ease;
+          color: $text-secondary;
+          font-size: .9rem;
+
+          &:hover {
+            color: $text-primary
+          }
+        }
+
+        .fa {
+          color: $text-primary;
+        }
+      }
+    }
+  }
+
+  #hslider {
+    .carousel-indicators>li{
+      width: .9rem;
+      height: .9rem;
+      border-radius: 20px;
+    }
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 100vh;
+         
+          
+        }
+
+        .carousel-caption {
+          bottom: 40%;
+          font-family: 'Pacifico', cursive !important;
+
+          h5 {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .sponsors{
+    background-color: lighten($text-secondary,40);
+    color:$text-secondary;
+    text-align: center;
+    ul{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding:15px;
+      li{
+        margin:5px;
+      }
+    }
+  }
+}
+
+main{
+
+}

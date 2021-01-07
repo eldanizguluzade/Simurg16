@@ -1,61 +1,38 @@
 <template>
     <div id="app">
           <repair-page v-if="isRepair"></repair-page>
-      <div class="container"  v-if="!isRepair">
-       <span>Other Components</span>
+        <div v-if="!isRepair">
+        <header>
+         <headernav-app></headernav-app>
+         <hslider-app></hslider-app>
+         <sponsors></sponsors>
+        </header>
+        <main></main>
       </div>
    </div>
 </template>
 
 <script>
 import Repair from './Repair'
+import HeaderNav from './components/Header/Nav'
+import HeaderSlider from './components/Header/Slider'
+import Sponsors from './components/Header/Sponsors'
 export default {
   name: 'app',
   components:{
-     "repair-page":Repair
+     "repair-page":Repair,
+     "headernav-app":HeaderNav,
+     "hslider-app":HeaderSlider,
+     "sponsors":Sponsors
   },
   data () {
     return {
-      isRepair:true,
+      isRepair:false,
     }
   }
 }
 </script>
 
-
-
-
-
-
-
-
-
-
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+<style lang="css">
+  @import url('./assets/css/main.css');
 </style>
