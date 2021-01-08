@@ -2,17 +2,24 @@
   <div id="hslider" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li v-for="slideCap in sliders" :key="slideCap.id" data-bs-target="#hslider"
-        :data-bs-slide-to="slideCap.id" :class="slideCap.isActive | sliderActive()"></li>
+        :data-bs-slide-to="slideCap.id" :class="sliderActive(slideCap.isActive)"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item" v-for="slide in sliders" :key="slide.id" :class="slide.isActive | sliderActive()">
+   
+        <div class="carousel-item" v-for="slide in sliders" :key="slide.id" :class="sliderActive(slide.isActive)">
         <img :src="slide.img" class="d-block" :alt="slide.alt">
-        <div class="carousel-caption d-block">
+        <transition
+        appear
+        enter-active-class="animated bounceInDown"
+        leave-active-class="animated bounceOutRight">
+         <div class="carousel-caption d-block">
           <h5>{{slide.title}}</h5>
           <p>{{slide.caption}}</p>
           <button class="btn btn-danger">Start Project</button>
         </div>
+        </transition>
       </div>
+
     </div>
     <a class="carousel-control-prev" href="#hslider" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -57,7 +64,7 @@
         ]
       }
     },
-    filters: {
+    methods: {
       sliderActive(item) {
         return item === true ? 'active' : null;
       }
@@ -66,3 +73,10 @@
 
 </script>
 
+
+<style lang="css">
+.side-effect-move{
+   transition: 8s ease;
+}
+  
+</style>
