@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-lg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <h1 class="h3">SIMURG-16</h1>
+        <h1 class="h2">SIMURG-16</h1>
       </a>
       <button class="btn btn-outline-danger d-lg-none" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

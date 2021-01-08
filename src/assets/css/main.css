@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 h1, h2 {
   font-weight: normal;
 }
@@ -16,6 +17,26 @@ a {
   color: inherit;
 }
 
+.mix-yellow {
+  background: linear-gradient(-45deg, #DA22FF, #9733EE);
+}
+
+.mix-blue {
+  background: linear-gradient(-45deg, #FFB75E, #ED8F03);
+}
+
+.mix-red {
+  background: linear-gradient(-45deg, #4776E6, #8E54E9);
+}
+
+.mix-violet {
+  background: linear-gradient(-45deg, #FF512F, #DD2476);
+}
+
+.text-muted-max {
+  color: #a6a6a6;
+}
+
 header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -28,9 +49,11 @@ header nav {
   width: 100%;
   z-index: 9999;
   overflow: hidden;
+  transition: background-color 0.5s linear;
 }
 header nav h1 {
-  color: #ff5c4a;
+  color: #ff2e17;
+  font-family: "Pattaya", sans-serif;
 }
 header nav #navbarNav {
   justify-content: flex-end;
@@ -72,8 +95,43 @@ header .sponsors ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
 }
 header .sponsors ul li {
-  margin: 5px;
+  margin: 5px 10px;
+}
+
+main #welcome {
+  padding: 4rem 0;
+}
+main #welcome h4, main #welcome p {
+  font-weight: 400;
+}
+main #welcome > p.h5 {
+  font-size: 1.1rem;
+}
+main #welcome ul {
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 3rem;
+}
+main #welcome ul li {
+  width: 300px;
+  border: none;
+}
+main #welcome ul li .fa {
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: white;
+}
+
+@media (min-width: 991.98px) {
+  header nav {
+    background-color: transparent;
+  }
+  header nav #navbarNav a.nav-link {
+    color: white;
+  }
 }

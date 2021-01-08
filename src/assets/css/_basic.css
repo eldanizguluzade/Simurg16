@@ -15,3 +15,23 @@ li {
 a {
   color: inherit;
 }
+
+.mix-yellow {
+  background: linear-gradient(-45deg, #DA22FF, #9733EE);
+}
+
+.mix-blue {
+  background: linear-gradient(-45deg, #FFB75E, #ED8F03);
+}
+
+.mix-red {
+  background: linear-gradient(-45deg, #4776E6, #8E54E9);
+}
+
+.mix-violet {
+  background: linear-gradient(-45deg, #FF512F, #DD2476);
+}
+
+.text-muted-max {
+  color: #a6a6a6;
+}

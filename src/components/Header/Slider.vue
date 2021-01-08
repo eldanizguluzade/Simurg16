@@ -5,7 +5,6 @@
         :data-bs-slide-to="slideCap.id" :class="sliderActive(slideCap.isActive)"></li>
     </ol>
     <div class="carousel-inner">
-   
         <div class="carousel-item" v-for="slide in sliders" :key="slide.id" :class="sliderActive(slide.isActive)">
         <img :src="slide.img" class="d-block" :alt="slide.alt">
         <transition
@@ -41,7 +40,7 @@
             id: 0,
             title: "Welcome To Pasific Studio",
             caption: "Wordpress. Joomla. eCommerce. HTML. Etc.",
-            img: "/src/assets/img/banners/banner-1.jpg",
+            img: "/src/assets/img/slide-img/banner-1.jpg",
             alt: "",
             isActive: true
           },
@@ -49,7 +48,7 @@
             id: 1,
             title: "Second slide label",
             caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            img: "/src/assets/img/banners/banner-2.jpg",
+            img: "/src/assets/img/slide-img/banner-2.jpg",
             alt: "",
             isActive: false
           },
@@ -57,7 +56,7 @@
             id: 2,
             title: "Three slide label",
             caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            img: "/src/assets/img/banners/banner-3.jpg",
+            img: "/src/assets/img/slide-img/banner-3.jpg",
             alt: "",
             isActive: false
           }
@@ -70,7 +69,6 @@
       }
     }
   }
-
 </script>
 
 

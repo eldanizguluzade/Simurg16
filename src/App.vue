@@ -7,7 +7,9 @@
          <hslider-app></hslider-app>
          <sponsors></sponsors>
         </header>
-        <main></main>
+        <main>
+       <welcome></welcome>
+        </main>
       </div>
    </div>
 </template>
@@ -17,13 +19,15 @@ import Repair from './Repair'
 import HeaderNav from './components/Header/Nav'
 import HeaderSlider from './components/Header/Slider'
 import Sponsors from './components/Header/Sponsors'
+import Welcome from './components/Main/Welcome'
 export default {
   name: 'app',
   components:{
      "repair-page":Repair,
      "headernav-app":HeaderNav,
      "hslider-app":HeaderSlider,
-     "sponsors":Sponsors
+     "sponsors":Sponsors,
+     "welcome":Welcome,
   },
   data () {
     return {
