@@ -1,6 +1,6 @@
-# simurg16
+# SIMURG-16
 
-> A Simurg16 Web Project
+> A SIMURG-16 Web Project
 
 ## Build Setup
 
