@@ -1,5 +1,5 @@
 <template>
-  <div id="hslider" class="carousel slide" data-bs-ride="carousel">
+  <section id="hslider" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li v-for="slideCap in sliders" :key="slideCap.id" data-bs-target="#hslider"
         :data-bs-slide-to="slideCap.id" :class="sliderActive(slideCap.isActive)"></li>
@@ -28,7 +28,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </a>
-  </div>
+  </section>
 </template>
 
 

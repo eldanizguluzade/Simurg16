@@ -9,6 +9,8 @@
         </header>
         <main>
        <welcome></welcome>
+       <our-statistics></our-statistics>
+       <buy-product></buy-product>
         </main>
       </div>
    </div>
@@ -20,6 +22,8 @@ import HeaderNav from './components/Header/Nav'
 import HeaderSlider from './components/Header/Slider'
 import Sponsors from './components/Header/Sponsors'
 import Welcome from './components/Main/Welcome'
+import Statistics from './components/Main/Statistics'
+import BuyProduct from './components/Main/BuyProduct'
 export default {
   name: 'app',
   components:{
@@ -28,6 +32,8 @@ export default {
      "hslider-app":HeaderSlider,
      "sponsors":Sponsors,
      "welcome":Welcome,
+     "our-statistics":Statistics,
+     "buy-product":BuyProduct
   },
   data () {
     return {

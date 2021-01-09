@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+.row {
+  --bs-gutter-x: 0!important;
+}
+
 .mix-yellow {
   background: linear-gradient(-45deg, #DA22FF, #9733EE);
 }
@@ -32,6 +36,20 @@ a {
   background: linear-gradient(-45deg, #FF512F, #DD2476);
 }
 
+.mix-grad-bora {
+  background: linear-gradient(45deg, #2BC0E4, #EAECC6);
+}
+
 .text-muted-max {
   color: #a6a6a6;
+}
+
+.btn-blue {
+  color: white;
+  background-color: #3dace1;
+}
+
+.btn-green {
+  color: white;
+  background-color: #1abc9c;
 }
