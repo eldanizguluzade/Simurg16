@@ -53,3 +53,54 @@ a {
   color: white;
   background-color: #1abc9c;
 }
+
+.ico-android {
+  color: #b2cc71;
+}
+
+.ico-apple {
+  color: #414f5f;
+}
+
+.ico-windows {
+  color: #FF4530;
+}
+
+.btn-android {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b2cc71 !important;
+  color: white !important;
+  border-bottom: 5px solid #728b32;
+}
+.btn-android:hover {
+  border-bottom: 3px solid #728b32;
+}
+
+.btn-ios {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #414f5f !important;
+  color: white !important;
+  border-bottom: 5px solid #0d1013;
+}
+.btn-ios:hover {
+  border-bottom: 3px solid #0d1013;
+}
+
+.btn-windows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF4530 !important;
+  color: white !important;
+  border-bottom: 5px solid #b01200;
+}
+.btn-windows:hover {
+  border-bottom: 3px solid #b01200;
+}

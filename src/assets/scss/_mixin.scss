@@ -1,0 +1,20 @@
+@mixin flexbox-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn-click($bg_color,$text_color) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $bg_color!important;
+  color: $text_color!important;
+  border-bottom: 5px solid darken($bg_color, 25);
+
+  &:hover {
+    border-bottom: 3px solid darken($bg_color, 25);
+  }
+}

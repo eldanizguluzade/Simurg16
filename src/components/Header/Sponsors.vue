@@ -1,5 +1,5 @@
 <template>
-    <div class="sponsors">
+    <section id="sponsors">
         <ul>
             <li><img src="/src/assets/img/sponsors/sponsors-1.png" alt="Sponsor"></li>
             <li><img src="/src/assets/img/sponsors/sponsors-2.png" alt="Sponsor"></li>
@@ -8,7 +8,7 @@
             <li><img src="/src/assets/img/sponsors/sponsors-5.png" alt="Sponsor"></li>
             <li><img src="/src/assets/img/sponsors/sponsors-6.png" alt="Sponsor"></li>
         </ul>
-    </div>
+    </section>
 </template>
 
 

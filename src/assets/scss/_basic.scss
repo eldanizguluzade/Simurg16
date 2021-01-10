@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixin";
 h1, h2 {
   font-weight: normal;
 }
@@ -43,4 +44,22 @@ a {
 .btn-green{
   color:white;
   background-color: $bg-green;
+}
+.ico-android{
+    color:$bg-green-light;
+}
+.ico-apple{
+  color:$bg-secondary;
+}
+.ico-windows {
+  color: $text-primary;
+}
+.btn-android {
+  @include btn-click($bg-green-light,white);
+}
+.btn-ios {
+  @include btn-click($bg-secondary,white);
+}
+.btn-windows{
+  @include btn-click($text-primary,white);
 }

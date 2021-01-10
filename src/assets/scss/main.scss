@@ -2,6 +2,8 @@
 @import "mixin";
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 
 header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,16 +69,13 @@ header {
     }
   }
 
-  .sponsors {
-    background-color: lighten($text-secondary, 40);
+  #sponsors {
+    background-color: #f5f7f9;
     color: $text-secondary;
     text-align: center;
 
     ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+      @include flexbox-center;
       padding: 25px 0;
 
       li {
@@ -159,9 +158,8 @@ main {
   }
 
   #download-app {
-    font-family: 'Source Sans Pro', sans-serif !important;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include flexbox-center;
     text-align: center;
     padding: 20px;
 
@@ -178,13 +176,43 @@ main {
 
   #buy-product {
     background-color: #f5f7f9;
-    color:$text-secondary;
+    color: $text-secondary;
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
+
+    h3 {
+      color: black;
+    }
+
+    .product-group {
+      @include flexbox-center;
+      padding: 40px 0;
+
+      .product {
+        box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.233);
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+
+        &:nth-child(even) {
+          box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.26);
+        }
+
+        .product-header {
+          h4 {
+            font-family: 'Pacifico', cursive;
+            color: black;
+          }
+        }
+
+        .product-footer {
+          position: relative;
+          padding: 30px;
+        }
+      }
+    }
   }
 }
-
-
 
 
 
@@ -203,22 +231,22 @@ main {
 
 // Medium devices (tablets, less than 992px)
 @media (min-width: 991.98px) {
-  header {
-    nav {
-      background-color: transparent;
-
-      #navbarNav {
-        a.nav-link {
-          color: white;
+  main {
+    #buy-product {
+      .product-group {
+        .product {
+          &:nth-child(even) {
+            transform: scale(1.1);
+          }
         }
       }
-
     }
   }
 }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+}
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {}

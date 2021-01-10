@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 h1, h2 {
   font-weight: normal;
 }
@@ -55,6 +56,57 @@ a {
   background-color: #1abc9c;
 }
 
+.ico-android {
+  color: #b2cc71;
+}
+
+.ico-apple {
+  color: #414f5f;
+}
+
+.ico-windows {
+  color: #FF4530;
+}
+
+.btn-android {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b2cc71 !important;
+  color: white !important;
+  border-bottom: 5px solid #728b32;
+}
+.btn-android:hover {
+  border-bottom: 3px solid #728b32;
+}
+
+.btn-ios {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #414f5f !important;
+  color: white !important;
+  border-bottom: 5px solid #0d1013;
+}
+.btn-ios:hover {
+  border-bottom: 3px solid #0d1013;
+}
+
+.btn-windows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF4530 !important;
+  color: white !important;
+  border-bottom: 5px solid #b01200;
+}
+.btn-windows:hover {
+  border-bottom: 3px solid #b01200;
+}
+
 header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -103,26 +155,26 @@ header #hslider .carousel-inner .carousel-item .carousel-caption {
 header #hslider .carousel-inner .carousel-item .carousel-caption h5 {
   font-size: 3rem;
 }
-header .sponsors {
-  background-color: #e6e6e6;
+header #sponsors {
+  background-color: #f5f7f9;
   color: gray;
   text-align: center;
 }
-header .sponsors ul {
+header #sponsors ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 25px 0;
 }
-header .sponsors ul li {
+header #sponsors ul li {
   margin: 5px 10px;
 }
-header .sponsors ul li img {
+header #sponsors ul li img {
   transition: opacity 0.3s ease;
   max-width: 100%;
 }
-header .sponsors ul li img:hover {
+header #sponsors ul li img:hover {
   opacity: 0.5;
 }
 
@@ -170,7 +222,9 @@ main #statistics .footer-block img {
   max-width: 100%;
 }
 main #download-app {
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -188,14 +242,38 @@ main #buy-product {
   background-color: #f5f7f9;
   color: gray;
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
+}
+main #buy-product h3 {
+  color: black;
+}
+main #buy-product .product-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+main #buy-product .product-group .product {
+  box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.233);
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main #buy-product .product-group .product:nth-child(even) {
+  box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.26);
+}
+main #buy-product .product-group .product .product-header h4 {
+  font-family: "Pacifico", cursive;
+  color: black;
+}
+main #buy-product .product-group .product .product-footer {
+  position: relative;
+  padding: 30px;
 }
 
 @media (min-width: 991.98px) {
-  header nav {
-    background-color: transparent;
-  }
-  header nav #navbarNav a.nav-link {
-    color: white;
+  main #buy-product .product-group .product:nth-child(even) {
+    transform: scale(1.1);
   }
 }
