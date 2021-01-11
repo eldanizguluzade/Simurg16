@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-number-animation": "^1.0.5"
   },
   "browserslist": [
     "> 1%",

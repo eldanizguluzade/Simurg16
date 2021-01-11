@@ -11,6 +11,7 @@
        <welcome></welcome>
        <our-statistics></our-statistics>
        <buy-product></buy-product>
+       <company-rating></company-rating>
         </main>
       </div>
    </div>
@@ -24,6 +25,7 @@ import Sponsors from './components/Header/Sponsors'
 import Welcome from './components/Main/Welcome'
 import Statistics from './components/Main/Statistics'
 import BuyProduct from './components/Main/BuyProduct'
+import CompanyRating from './components/Main/CompanyRating'
 export default {
   name: 'app',
   components:{
@@ -33,7 +35,8 @@ export default {
      "sponsors":Sponsors,
      "welcome":Welcome,
      "our-statistics":Statistics,
-     "buy-product":BuyProduct
+     "buy-product":BuyProduct,
+     "company-rating":CompanyRating
   },
   data () {
     return {

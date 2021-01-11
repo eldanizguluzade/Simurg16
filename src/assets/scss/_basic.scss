@@ -16,6 +16,9 @@ li {
 a {
   color: inherit;
 }
+.img{
+  max-width: 100%;
+}
 .row{
   --bs-gutter-x: 0!important;
 }
@@ -36,6 +39,18 @@ a {
 }
 .text-muted-max{
   color:lighten($text-secondary,15);
+}
+.color-success{
+  color: #5cb85c !important;
+}
+.color-blue{
+  color: #3dace1 !important;
+}
+.color-cyan{
+  color: #1abc9c !important;
+}
+.color-yellow{
+  color: #ffc501 !important;
 }
 .btn-blue{
   color:white;

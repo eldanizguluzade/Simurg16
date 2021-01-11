@@ -59,8 +59,7 @@
       </li>
     </ul>
     <div class="our-contact">
-      <p class="lead">For custom price, please contact us: <p><i class="fa fa-phone-alt"></i> +90-000-000-0000</p>
-      </p>
+      <p class="lead">For custom price, please contact us: <br><i class="fa fa-phone-alt"></i> +90-000-000-0000</p>
     </div>
   </section>
 </template>
