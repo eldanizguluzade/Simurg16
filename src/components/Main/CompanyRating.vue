@@ -12,7 +12,7 @@
               class="color-success"
               :from="0" 
               :to="OurRatings.installs" 
-              :duration="7" 
+              :duration="5" 
               :delay="4"
                 easing="Power1.easeOut" />
             <p>Installs</p>
@@ -22,7 +22,7 @@
                class="color-blue"
               :from="0" 
               :to="OurRatings.happyClients" 
-              :duration="7" 
+              :duration="5" 
               :delay="4"
                 easing="Power1.easeOut" />
             <p>Happy Clients</p>
@@ -34,7 +34,7 @@
               class="color-cyan"
               :from="0" 
               :to="OurRatings.coffeeCups" 
-              :duration="7" 
+              :duration="5" 
               :delay="4"
                 easing="Power1.easeOut" />
             <p>Coffee Cups</p>
@@ -44,7 +44,7 @@
               class="color-yellow"
               :from="0" 
               :to="OurRatings.reviews" 
-              :duration="7" 
+              :duration="5" 
               :delay="4"
                 easing="Power1.easeOut" />
             <p>Reviews</p>

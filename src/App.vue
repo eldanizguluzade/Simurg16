@@ -12,6 +12,7 @@
        <our-statistics></our-statistics>
        <buy-product></buy-product>
        <company-rating></company-rating>
+       <app-features></app-features>
         </main>
       </div>
    </div>
@@ -26,6 +27,7 @@ import Welcome from './components/Main/Welcome'
 import Statistics from './components/Main/Statistics'
 import BuyProduct from './components/Main/BuyProduct'
 import CompanyRating from './components/Main/CompanyRating'
+import ProductFeatures from './components/Main/ProductFeatures'
 export default {
   name: 'app',
   components:{
@@ -36,7 +38,8 @@ export default {
      "welcome":Welcome,
      "our-statistics":Statistics,
      "buy-product":BuyProduct,
-     "company-rating":CompanyRating
+     "company-rating":CompanyRating,
+     "app-features":ProductFeatures
   },
   data () {
     return {

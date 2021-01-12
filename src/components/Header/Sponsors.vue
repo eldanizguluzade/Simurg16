@@ -1,6 +1,6 @@
 <template>
     <section id="sponsors">
-        <ul>
+        <ul data-aos="fade-zoom-in">
             <li><img src="/src/assets/img/sponsors/sponsors-1.png" alt="Sponsor"></li>
             <li><img src="/src/assets/img/sponsors/sponsors-2.png" alt="Sponsor"></li>
             <li><img src="/src/assets/img/sponsors/sponsors-3.png" alt="Sponsor"></li>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
 }
 
@@ -336,10 +337,81 @@ main #company-rating .company-footer a.btn {
   color: white;
   width: 150px;
 }
+main #app-features {
+  background: linear-gradient(-45deg, #DA22FF, #ff5c4a);
+  color: white;
+  padding: 6rem 0;
+}
+main #app-features .features-header {
+  text-align: center;
+}
+main #app-features .features-body {
+  position: relative;
+  margin-top: 4rem;
+}
+main #app-features .features-body .features-group div > div:first-child {
+  align-items: flex-end;
+}
+main #app-features .features-body .features-group div > div:last-child {
+  align-items: flex-start;
+}
+main #app-features .features-body .features-group div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+main #app-features .features-body .features-group div > div span {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+main #app-features .features-body .features-group div > div span i {
+  margin: 0 20px;
+}
+main #app-features .features-body .features-group div > div p {
+  max-width: 40%;
+  font-size: 0.9rem;
+}
+main #app-features .features-body .features-group .app-img {
+  text-align: center;
+  position: relative;
+}
+main #app-features .features-body .features-group .app-img img {
+  max-width: 100%;
+}
 
 @media (min-width: 991.98px) {
   main #buy-product .product-group .product:nth-child(even) {
     transform: scale(1.1);
+  }
+  main #app-features .features-body {
+    position: relative;
+  }
+  main #app-features .features-body .features-group div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    margin-top: 3rem;
+  }
+  main #app-features .features-body .features-group div > div span {
+    font-size: 1.4rem;
+  }
+  main #app-features .features-body .features-group div > div span i {
+    margin: 0 20px;
+  }
+  main #app-features .features-body .features-group div > div p {
+    max-width: 40%;
+  }
+  main #app-features .features-body .features-group .app-img {
+    text-align: center;
+    position: absolute;
+    top: -40px;
+    left: -5px;
+  }
+  main #app-features .features-body .features-group .app-img img {
+    max-width: 40%;
   }
 }
 @media (min-width: 1199.98px) {

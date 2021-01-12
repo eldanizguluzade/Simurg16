@@ -258,6 +258,55 @@ main {
       }
     }
   }
+  #app-features{
+    background: linear-gradient(-45deg, $bg-primary, lighten($text-primary,5));
+    color:white;
+    padding: 6rem 0;
+    .features-header{
+      text-align: center;
+    }
+    .features-body{
+      position: relative;
+      margin-top: 4rem;
+      .features-group{
+        div{
+          &>div:first-child{        
+              align-items: flex-end;      
+          }
+          &>div:last-child{
+              align-items: flex-start;  
+         }
+          &>div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+            span{
+              display: flex;
+              align-items: center;
+              font-size: 1.3rem;
+              font-weight: 400;
+             i{
+               margin:0 20px;
+             }
+            }
+             p{
+               max-width:40%;
+               font-size: .9rem;
+            }
+          }
+        }
+        .app-img{
+          text-align: center;
+          position: relative;
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+     
+    }
+  }
 }
 
 
@@ -285,6 +334,44 @@ main {
             transform: scale(1.1);
           }
         }
+      }
+    }
+    #app-features{
+     
+      .features-header{
+      
+      }
+      .features-body{
+        position: relative;
+        .features-group{
+          div{
+            &>div{
+              display: flex;
+              flex-direction: column;
+              align-items: center!important;
+              margin-top: 3rem;
+              span{
+                font-size: 1.4rem;
+               i{
+                 margin:0 20px;
+               }
+              }
+               p{
+                 max-width:40%;
+              }
+            }
+          }
+          .app-img{
+            text-align: center;
+            position: absolute;
+            top:-40px;
+            left: -5px;
+            img{
+              max-width: 40%;
+            }
+          }
+        }
+       
       }
     }
   }
