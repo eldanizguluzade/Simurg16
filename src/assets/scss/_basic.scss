@@ -16,6 +16,7 @@ li {
 }
 a {
   color: inherit;
+  text-decoration: none;
 }
 .img{
   max-width: 100%;
@@ -78,4 +79,11 @@ a {
 }
 .btn-windows{
   @include btn-click($text-primary,white);
+}
+.small-line{
+  padding:0 30px;
+  border-bottom: 3px solid $text-primary;
+}
+a.btn{
+  font-family: 'Montserrat', sans-serif!important;
 }

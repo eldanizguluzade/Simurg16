@@ -15,6 +15,7 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .img {
@@ -124,4 +125,13 @@ a {
 }
 .btn-windows:hover {
   border-bottom: 3px solid #b01200;
+}
+
+.small-line {
+  padding: 0 30px;
+  border-bottom: 3px solid #FF4530;
+}
+
+a.btn {
+  font-family: "Montserrat", sans-serif !important;
 }

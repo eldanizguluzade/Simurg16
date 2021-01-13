@@ -11,7 +11,7 @@ header {
 
   nav {
     position: fixed !important;
-    background-color: whitesmoke;
+    background-color: white;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -20,7 +20,7 @@ header {
     transition: background-color .5s linear;
 
     h1 {
-      color: darken($text-secondary, 30);
+      color: $text-primary;
       font-family: 'Pattaya', sans-serif;
     }
     #navbarNav {
@@ -306,6 +306,100 @@ main {
       }
      
     }
+
+  }
+  #app-photo{
+    padding: 6rem 0;
+    box-shadow:0 0 70px 3px rgba(128, 128, 128, 0.39);
+    .photo-header{
+      text-align:center;
+    }
+    .photo-body{
+      padding-top: 3rem;
+      .VueCarousel-slide{
+        transition: transform .3s;
+        &:hover{
+          transform: scale(.9);
+        }
+      }
+    }
+  }
+  #our-team{
+    padding: 6rem 0;
+    background-color: $bg-silver;
+    box-shadow:0 0 10px 1px rgba(128, 128, 128, 0.39);
+    .team-header{
+      text-align: center;
+    }
+    .team-body{
+      padding-top: 3rem;
+      .team-list{
+        justify-content: center;
+        .card-item{
+          position: relative;
+          padding: 2rem 0;
+          width: 100%;
+          text-align: center;
+          background-color:white;
+          border-bottom: 2px solid rgba(128, 128, 128, 0.164);
+          border-radius: 5px;
+          &:hover{
+               animation: vibration .3s ease 2;
+          }
+          .header-card{
+            h5{
+              margin:0;
+            }
+            small{
+              color:lighten($text-primary,10);
+              font-size: .9rem;
+            }
+          }
+          .body-card{
+            img{
+              border:10px solid lighten(grey,35);
+              width: 150px;
+              height: 150px;
+            }
+            
+          }
+          .footer-card{
+           .social-group{
+             li{
+               border:1px solid rgba(128, 128, 128, 0.479);
+               border-radius:2px;
+               padding: 4px 7px;
+               margin:0;
+               a{
+                 color:grey;
+                 font-size:.9rem;
+                 transition: color .3s ease;
+                 &:hover{
+                   color:$text-primary;
+                 }
+               }
+             }
+           }
+          }
+         
+        }
+      }
+
+    }
+    .team-footer{
+      text-align: center;
+      .text{
+        font-family: 'Pacifico', cursive !important;
+        color:darken($text-secondary,15);
+      }
+      a.btn{
+        text-transform: uppercase;
+        background-color:$bg-blue;
+        color:white;
+        font-size: .8rem;
+        padding:.7rem 1.3rem;
+      }
+    }
   }
 }
 
@@ -374,6 +468,16 @@ main {
        
       }
     }
+    #our-team{
+      .team-body{
+        .team-list{
+          .card-item{
+            width: 31%;
+          }
+        }
+  
+      }
+    }
   }
 }
 
@@ -391,8 +495,29 @@ main {
         }
       }
     }
+    #our-team{
+      .team-body{
+        .team-list{
+          .card-item{
+            width: 20%;
+          }
+        }
+  
+      }
+    }
   }
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {}
+
+
+
+
+
+@keyframes vibration{
+  0% {top: 0;}
+  50% {top: 4px;}
+  70% {top: 0px;}
+  100% {top: -4px;}
+}

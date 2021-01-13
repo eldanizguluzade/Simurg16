@@ -17,6 +17,7 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .img {
@@ -128,13 +129,22 @@ a {
   border-bottom: 3px solid #b01200;
 }
 
+.small-line {
+  padding: 0 30px;
+  border-bottom: 3px solid #FF4530;
+}
+
+a.btn {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 header nav {
   position: fixed !important;
-  background-color: whitesmoke;
+  background-color: white;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -143,7 +153,7 @@ header nav {
   transition: background-color 0.5s linear;
 }
 header nav h1 {
-  color: #343434;
+  color: #FF4530;
   font-family: "Pattaya", sans-serif;
 }
 header nav #navbarNav {
@@ -381,6 +391,88 @@ main #app-features .features-body .features-group .app-img {
 main #app-features .features-body .features-group .app-img img {
   max-width: 100%;
 }
+main #app-photo {
+  padding: 6rem 0;
+  box-shadow: 0 0 70px 3px rgba(128, 128, 128, 0.39);
+}
+main #app-photo .photo-header {
+  text-align: center;
+}
+main #app-photo .photo-body {
+  padding-top: 3rem;
+}
+main #app-photo .photo-body .VueCarousel-slide {
+  transition: transform 0.3s;
+}
+main #app-photo .photo-body .VueCarousel-slide:hover {
+  transform: scale(0.9);
+}
+main #our-team {
+  padding: 6rem 0;
+  background-color: #f5f7f9;
+  box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.39);
+}
+main #our-team .team-header {
+  text-align: center;
+}
+main #our-team .team-body {
+  padding-top: 3rem;
+}
+main #our-team .team-body .team-list {
+  justify-content: center;
+}
+main #our-team .team-body .team-list .card-item {
+  position: relative;
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.164);
+  border-radius: 5px;
+}
+main #our-team .team-body .team-list .card-item:hover {
+  animation: vibration 0.3s ease 2;
+}
+main #our-team .team-body .team-list .card-item .header-card h5 {
+  margin: 0;
+}
+main #our-team .team-body .team-list .card-item .header-card small {
+  color: #ff7363;
+  font-size: 0.9rem;
+}
+main #our-team .team-body .team-list .card-item .body-card img {
+  border: 10px solid #d9d9d9;
+  width: 150px;
+  height: 150px;
+}
+main #our-team .team-body .team-list .card-item .footer-card .social-group li {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 2px;
+  padding: 4px 7px;
+  margin: 0;
+}
+main #our-team .team-body .team-list .card-item .footer-card .social-group li a {
+  color: grey;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+main #our-team .team-body .team-list .card-item .footer-card .social-group li a:hover {
+  color: #FF4530;
+}
+main #our-team .team-footer {
+  text-align: center;
+}
+main #our-team .team-footer .text {
+  font-family: "Pacifico", cursive !important;
+  color: #5a5a5a;
+}
+main #our-team .team-footer a.btn {
+  text-transform: uppercase;
+  background-color: #3dace1;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.7rem 1.3rem;
+}
 
 @media (min-width: 991.98px) {
   main #buy-product .product-group .product:nth-child(even) {
@@ -413,10 +505,30 @@ main #app-features .features-body .features-group .app-img img {
   main #app-features .features-body .features-group .app-img img {
     max-width: 40%;
   }
+  main #our-team .team-body .team-list .card-item {
+    width: 31%;
+  }
 }
 @media (min-width: 1199.98px) {
   main #company-rating .company-body .our-ratings .map {
     position: absolute;
     transform: scale(0.8);
+  }
+  main #our-team .team-body .team-list .card-item {
+    width: 20%;
+  }
+}
+@keyframes vibration {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 4px;
+  }
+  70% {
+    top: 0px;
+  }
+  100% {
+    top: -4px;
   }
 }

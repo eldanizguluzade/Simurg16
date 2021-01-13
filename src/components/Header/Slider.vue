@@ -40,7 +40,7 @@
             id: 0,
             title: "Welcome To Pasific Studio",
             caption: "Wordpress. Joomla. eCommerce. HTML. Etc.",
-            img: "/src/assets/img/slide-img/banner-1.jpg",
+            img: "/src/assets/img/slide-imgs/banner-1.jpg",
             alt: "",
             isActive: true
           },
@@ -48,7 +48,7 @@
             id: 1,
             title: "Second slide label",
             caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            img: "/src/assets/img/slide-img/banner-2.jpg",
+            img: "/src/assets/img/slide-imgs/banner-2.jpg",
             alt: "",
             isActive: false
           },
@@ -56,7 +56,7 @@
             id: 2,
             title: "Three slide label",
             caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            img: "/src/assets/img/slide-img/banner-3.jpg",
+            img: "/src/assets/img/slide-imgs/banner-3.jpg",
             alt: "",
             isActive: false
           }

@@ -13,6 +13,8 @@
        <buy-product></buy-product>
        <company-rating></company-rating>
        <app-features></app-features>
+       <app-photo></app-photo>
+       <our-team></our-team>
         </main>
       </div>
    </div>
@@ -28,6 +30,8 @@ import Statistics from './components/Main/Statistics'
 import BuyProduct from './components/Main/BuyProduct'
 import CompanyRating from './components/Main/CompanyRating'
 import ProductFeatures from './components/Main/ProductFeatures'
+import AppPhoto from './components/Main/AppPhoto'
+import OurTeam from './components/Main/OurTeam'
 export default {
   name: 'app',
   components:{
@@ -39,7 +43,9 @@ export default {
      "our-statistics":Statistics,
      "buy-product":BuyProduct,
      "company-rating":CompanyRating,
-     "app-features":ProductFeatures
+     "app-features":ProductFeatures,
+     "app-photo":AppPhoto,
+     "our-team":OurTeam
   },
   data () {
     return {
