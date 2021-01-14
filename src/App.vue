@@ -15,6 +15,7 @@
        <app-features></app-features>
        <app-photo></app-photo>
        <our-team></our-team>
+       <question-answer></question-answer>
         </main>
       </div>
    </div>
@@ -32,6 +33,7 @@ import CompanyRating from './components/Main/CompanyRating'
 import ProductFeatures from './components/Main/ProductFeatures'
 import AppPhoto from './components/Main/AppPhoto'
 import OurTeam from './components/Main/OurTeam'
+import Question from './components/Main/QuestionAnswer'
 export default {
   name: 'app',
   components:{
@@ -45,7 +47,8 @@ export default {
      "company-rating":CompanyRating,
      "app-features":ProductFeatures,
      "app-photo":AppPhoto,
-     "our-team":OurTeam
+     "our-team":OurTeam,
+     "question-answer":Question
   },
   data () {
     return {

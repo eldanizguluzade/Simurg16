@@ -473,6 +473,33 @@ main #our-team .team-footer a.btn {
   font-size: 0.8rem;
   padding: 0.7rem 1.3rem;
 }
+main #question-answer {
+  padding: 6rem 0;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+main #question-answer p > a {
+  transition: color 0.3s ease;
+}
+main #question-answer p > a:hover {
+  color: white !important;
+}
+main #question-answer #accordionQuestion .accordion-item {
+  margin-bottom: 5px;
+}
+main #question-answer #accordionQuestion .accordion-item button {
+  color: #4d4d4d;
+  background-color: white;
+  border-radius: 8px;
+}
+main #question-answer #accordionQuestion .accordion-item .accordion-body {
+  background-color: white;
+  color: gray;
+  border-radius: 0 0 10px 10px;
+  width: 98.5%;
+  margin: auto;
+}
 
 @media (min-width: 991.98px) {
   main #buy-product .product-group .product:nth-child(even) {

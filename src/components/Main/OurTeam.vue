@@ -60,9 +60,9 @@
           },
           {
             id: 2,
-            fullname: "Eldaniz Guluzade",
+            fullname: "Michael Doe",
             mission: "Co-Founder & CEO",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            photo: "/src/assets/img/team-imgs/2.jpg",
             social: {
               twitter: '#',
               facebook: '#',
@@ -73,9 +73,9 @@
           },
             {
             id: 3,
-            fullname: "Eldaniz Guluzade",
+            fullname: "John Doe",
             mission: "Web Designer",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            photo: "/src/assets/img/team-imgs/3.jpg",
             social: {
               twitter: '#',
               facebook: '#',
@@ -86,9 +86,9 @@
           },
             {
             id: 4,
-            fullname: "Eldaniz Guluzade",
+            fullname: "Harry Doe",
             mission: "App Designer",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            photo: "/src/assets/img/team-imgs/4.jpg",
             social: {
               twitter: '#',
               facebook: '#',
@@ -99,9 +99,9 @@
           },
            {
             id: 5,
-            fullname: "Eldaniz Guluzade",
+            fullname: "Terry Doe",
             mission: "Web Developer",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            photo: "/src/assets/img/team-imgs/5.jpg",
             social: {
               twitter: '#',
               facebook: '#',
@@ -112,9 +112,9 @@
           },
              {
             id: 6,
-            fullname: "Eldaniz Guluzade",
-            mission: "Ceo-Founder",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            fullname: "Michael Doe",
+            mission: "Back-end Developer",
+            photo: "/src/assets/img/team-imgs/6.jpg",
             social: {
               twitter: '#',
               facebook: '#',
@@ -125,9 +125,9 @@
           },
              {
             id: 7,
-            fullname: "Eldaniz Guluzade",
-            mission: "Writer",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            fullname: "Harry Doe",
+            mission: "Co-Founder",
+            photo: "/src/assets/img/team-imgs/8.jpg",
             social: {
               twitter: '#',
               facebook: '#',
@@ -138,9 +138,9 @@
           },
              {
             id: 8,
-            fullname: "Eldaniz Guluzade",
+            fullname: "Terry Doe",
             mission: "App Developer",
-            photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
+            photo: "/src/assets/img/team-imgs/9.jpg",
             social: {
               twitter: '#',
               facebook: '#',

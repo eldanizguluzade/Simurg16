@@ -401,6 +401,35 @@ main {
       }
     }
   }
+  #question-answer{
+    padding: 6rem 0;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    p>a{
+      transition: color .3s ease;
+      &:hover{
+        color: white!important;
+      }
+    }
+    #accordionQuestion{
+      .accordion-item{
+        margin-bottom: 5px;
+        button{
+          color:darken($text-secondary,20);
+           background-color: white;
+           border-radius:8px; 
+        }
+        .accordion-body{
+          background-color: white;
+          color:$text-secondary;
+          border-radius:0 0 10px 10px;
+          width: 98.5%;
+          margin:auto;
+        }
+      }
+    }
+  }
 }
 
 
