@@ -98,7 +98,7 @@
             }
           },
            {
-            id: 7,
+            id: 5,
             fullname: "Eldaniz Guluzade",
             mission: "Web Developer",
             photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
@@ -111,7 +111,7 @@
             }
           },
              {
-            id: 4,
+            id: 6,
             fullname: "Eldaniz Guluzade",
             mission: "Ceo-Founder",
             photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
@@ -124,7 +124,7 @@
             }
           },
              {
-            id: 4,
+            id: 7,
             fullname: "Eldaniz Guluzade",
             mission: "Writer",
             photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",
@@ -137,7 +137,7 @@
             }
           },
              {
-            id: 4,
+            id: 8,
             fullname: "Eldaniz Guluzade",
             mission: "App Developer",
             photo: "/src/assets/img/team-imgs/Eldaniz_Guluzade.jpg",

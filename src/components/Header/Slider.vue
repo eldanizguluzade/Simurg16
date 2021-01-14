@@ -9,8 +9,9 @@
         <img :src="slide.img" class="d-block" :alt="slide.alt">
         <transition
         appear
-        enter-active-class="animated bounceInDown"
-        leave-active-class="animated bounceOutRight">
+        :enter-active-class="'animated '+ slide.InEffect"
+        :leave-active-class="'animated '+ slide.OutEffect"
+        v-if="sliderEffect">
          <div class="carousel-caption d-block">
           <h5>{{slide.title}}</h5>
           <p>{{slide.caption}}</p>
@@ -18,13 +19,12 @@
         </div>
         </transition>
       </div>
-
     </div>
-    <a class="carousel-control-prev" href="#hslider" role="button" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#hslider" role="button" data-bs-slide="prev" @click="sliderEffect=false">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#hslider" role="button" data-bs-slide="next">
+    <a class="carousel-control-next" href="#hslider" role="button" data-bs-slide="next"  @click="sliderEffect=false">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </a>
@@ -36,13 +36,16 @@
   export default {
     data() {
       return {
+        sliderEffect:true,
         sliders: [{
             id: 0,
             title: "Welcome To Pasific Studio",
             caption: "Wordpress. Joomla. eCommerce. HTML. Etc.",
             img: "/src/assets/img/slide-imgs/banner-1.jpg",
             alt: "",
-            isActive: true
+            isActive: true,
+            InEffect:"bounceInDown",
+            OutEffect:"bounceOutRight"
           },
           {
             id: 1,
@@ -50,7 +53,9 @@
             caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
             img: "/src/assets/img/slide-imgs/banner-2.jpg",
             alt: "",
-            isActive: false
+            isActive: false,
+            InEffect:"rotateInUpRight",
+            OutEffect:"rotateOutDownLeft"
           },
           {
             id: 2,
@@ -58,23 +63,24 @@
             caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
             img: "/src/assets/img/slide-imgs/banner-3.jpg",
             alt: "",
-            isActive: false
+            isActive: false,
+            InEffect:"rollIn",
+            OutEffect:"bounceInLeft"
           }
         ]
       }
     },
     methods: {
       sliderActive(item) {
-        return item === true ? 'active' : null;
+        return item==true? 'active':null;
+      }
+    },
+    watch:{
+      sliderEffect(){
+        setTimeout(() => {
+          this.sliderEffect=true;
+        }, 800);
       }
     }
   }
 </script>
-
-
-<style lang="css">
-.side-effect-move{
-   transition: 8s ease;
-}
-  
-</style>
