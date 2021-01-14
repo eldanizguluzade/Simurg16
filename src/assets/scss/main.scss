@@ -261,7 +261,7 @@ main {
   #app-features{
     background: linear-gradient(-45deg, $bg-primary, lighten($text-primary,5));
     color:white;
-    padding: 6rem 0;
+     padding: 5rem 0 3rem 0;
     .features-header{
       text-align: center;
     }
@@ -309,7 +309,7 @@ main {
 
   }
   #app-photo{
-    padding: 6rem 0;
+    padding: 5rem 0 3rem 0;
     box-shadow:0 0 70px 3px rgba(128, 128, 128, 0.39);
     .photo-header{
       text-align:center;
@@ -325,7 +325,7 @@ main {
     }
   }
   #our-team{
-    padding: 6rem 0;
+    padding: 5rem 0 3rem 0;
     background-color: $bg-silver;
     box-shadow:0 0 10px 1px rgba(128, 128, 128, 0.39);
     .team-header{
@@ -402,7 +402,7 @@ main {
     }
   }
   #question-answer{
-    padding: 6rem 0;
+    padding: 5rem 0 3rem 0;
     color:white;
     text-align: center;
     justify-content: center;
@@ -460,6 +460,7 @@ main {
       }
     }
     #app-features{
+      padding: 6rem 0;
       .features-body{
         position: relative;
         .features-group{

@@ -350,7 +350,7 @@ main #company-rating .company-footer a.btn {
 main #app-features {
   background: linear-gradient(-45deg, #DA22FF, #ff5c4a);
   color: white;
-  padding: 6rem 0;
+  padding: 5rem 0 3rem 0;
 }
 main #app-features .features-header {
   text-align: center;
@@ -392,7 +392,7 @@ main #app-features .features-body .features-group .app-img img {
   max-width: 100%;
 }
 main #app-photo {
-  padding: 6rem 0;
+  padding: 5rem 0 3rem 0;
   box-shadow: 0 0 70px 3px rgba(128, 128, 128, 0.39);
 }
 main #app-photo .photo-header {
@@ -408,7 +408,7 @@ main #app-photo .photo-body .VueCarousel-slide:hover {
   transform: scale(0.9);
 }
 main #our-team {
-  padding: 6rem 0;
+  padding: 5rem 0 3rem 0;
   background-color: #f5f7f9;
   box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.39);
 }
@@ -474,7 +474,7 @@ main #our-team .team-footer a.btn {
   padding: 0.7rem 1.3rem;
 }
 main #question-answer {
-  padding: 6rem 0;
+  padding: 5rem 0 3rem 0;
   color: white;
   text-align: center;
   justify-content: center;
@@ -504,6 +504,9 @@ main #question-answer #accordionQuestion .accordion-item .accordion-body {
 @media (min-width: 991.98px) {
   main #buy-product .product-group .product:nth-child(even) {
     transform: scale(1.1);
+  }
+  main #app-features {
+    padding: 6rem 0;
   }
   main #app-features .features-body {
     position: relative;
