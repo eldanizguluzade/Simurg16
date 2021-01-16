@@ -68,6 +68,10 @@ a {
   color: #ffc501 !important;
 }
 
+.color-gold {
+  color: #f0ad4e;
+}
+
 .btn-blue {
   color: white;
   background-color: #3dace1;
@@ -132,6 +136,14 @@ a {
 .small-line {
   padding: 0 30px;
   border-bottom: 3px solid #FF4530;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.deactive {
+  opacity: 0.1 !important;
 }
 
 a.btn {
@@ -492,6 +504,10 @@ main #question-answer #accordionQuestion .accordion-item button {
   color: #4d4d4d;
   background-color: white;
   border-radius: 8px;
+  transition: color 0.3s ease;
+}
+main #question-answer #accordionQuestion .accordion-item button:hover {
+  color: #FF4530;
 }
 main #question-answer #accordionQuestion .accordion-item .accordion-body {
   background-color: white;
@@ -499,6 +515,146 @@ main #question-answer #accordionQuestion .accordion-item .accordion-body {
   border-radius: 0 0 10px 10px;
   width: 98.5%;
   margin: auto;
+}
+main #our-blog {
+  padding: 5rem 0 3rem 0;
+  background-color: #f5f7f9;
+}
+main #our-blog .blog-header {
+  text-align: center;
+}
+main #our-blog .blog-body {
+  margin-top: 3rem;
+}
+main #our-blog .blog-body .blog-items {
+  justify-content: center;
+}
+main #our-blog .blog-body .blog-items .card {
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  background-color: white;
+  transition: 0.5s ease;
+  margin: 0 1rem 1rem 0;
+}
+main #our-blog .blog-body .blog-items .card:hover {
+  box-shadow: 0 0 20px 5px rgba(128, 128, 128, 0.315);
+}
+main #our-blog .blog-body .blog-items .card .card-header {
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  background-color: #f1f5f9;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.151);
+}
+main #our-blog .blog-body .blog-items .card .card-header .share-info {
+  padding: 0.5rem 0;
+}
+main #our-blog .blog-body .blog-items .card .card-header .share-info img {
+  position: absolute;
+  top: 30%;
+  width: 62px;
+  border: 6px solid white;
+}
+main #our-blog .blog-body .blog-items .card .card-header .share-info span {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  margin-left: 70px;
+  color: #FF4530;
+  font-weight: bold;
+}
+main #our-blog .blog-body .blog-items .card .card-header .share-times {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  color: #a6a6a6;
+}
+main #our-blog .blog-body .blog-items .card .card-body .card-images {
+  text-align: center;
+}
+main #our-blog .blog-body .blog-items .card .card-body .card-images img {
+  margin: 2rem 0 1rem 0;
+  width: 100%;
+}
+main #our-blog .blog-body .blog-items .card .card-body .card-title {
+  color: #676767;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+main #our-blog .blog-body .blog-items .card .card-body .card-title a {
+  transition: color 0.3s ease;
+}
+main #our-blog .blog-body .blog-items .card .card-body .card-title a:hover {
+  color: #FF4530;
+}
+main #our-blog .blog-body .blog-items .card .card-body .card-text {
+  line-height: 25px;
+}
+main #our-blog .blog-body .blog-items .card .card-footer {
+  background-color: white;
+  color: #b3b3b3;
+  border-top: 1px dashed rgba(128, 128, 128, 0.404);
+  padding: 1rem;
+}
+main #our-blog .blog-body .blog-items .card .card-footer a {
+  transition: color 0.3s ease;
+}
+main #our-blog .blog-body .blog-items .card .card-footer a:hover {
+  color: #FF4530;
+}
+main #our-blog .blog-body .blog-items .card .card-footer .more-items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+main #our-blog .blog-body .blog-items .card .card-footer .more-items span {
+  margin-right: 10px;
+}
+main #our-blog .blog-body .blog-items .card .card-footer .more-items i {
+  color: #FF4530;
+  margin-right: 5px;
+}
+main #join-our {
+  background-color: #323A45;
+  color: white;
+  padding: 4rem 0;
+}
+main #join-our .row small {
+  color: #9a9a9a;
+}
+main #join-our .row p {
+  font-size: 0.9rem;
+}
+main #join-our .row div {
+  position: relative;
+}
+main #join-our .row div .btn {
+  padding: 0.8rem 1rem;
+}
+main #our-apps {
+  padding: 5rem 0 3rem 0;
+  text-align: center;
+}
+main #our-apps .ourapps-body {
+  margin-top: 3rem;
+}
+main #our-apps .ourapps-body #apps-group .app {
+  margin: 1rem 0 5rem 0;
+}
+main #our-apps .ourapps-body #apps-group .app .app-body {
+  text-align: center;
+}
+main #our-apps .ourapps-body #apps-group .app .app-body .app-rating i {
+  font-size: 11px;
+  opacity: 0.8;
+}
+main #our-apps .ourapps-body #apps-group .app .app-body .app-text {
+  font-size: 0.9rem;
 }
 
 @media (min-width: 991.98px) {

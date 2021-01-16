@@ -8,7 +8,7 @@
     <div class="team-body">
       <div class="team-group container">
         <ul class="team-list row">
-          <li class="card-item mb-4" v-for="profile in team_profiles" :key="profile.id">
+          <li class="card-item mb-4" v-for="profile in team_profiles" :key="profile.id" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="header-card text-center">
               <h5 class="h6 card-title">{{profile.fullname}}</h5>
               <small>{{profile.mission}}</small>
@@ -18,13 +18,13 @@
             </div>
             <div class="footer-card">
               <ul class="social-group">
-                <li><a :href="profile.social.twitter" target="_blank" class="fa fa-twitter" aria-hidden="true"></a></li>
-                <li><a :href="profile.social.facebook" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                <li><a :href="profile.social.twitter" target="_blank" class="fa fa-twitter" aria-label="twitter"></a></li>
+                <li><a :href="profile.social.facebook" target="_blank" class="fa fa-facebook" aria-label="facebook"></a>
                 </li>
-                <li><a :href="profile.social.linkedin" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+                <li><a :href="profile.social.linkedin" target="_blank" class="fa fa-linkedin" aria-label="linkedin"></a>
                 </li>
-                <li><a :href="profile.social.github" target="_blank" class="fa fa-github" aria-hidden="true"></a></li>
-                <li><a :href="profile.social.pinterest" target="_blank" class="fa fa-pinterest" aria-hidden="true"></a>
+                <li><a :href="profile.social.github" target="_blank" class="fa fa-github" aria-label="github"></a></li>
+                <li><a :href="profile.social.pinterest" target="_blank" class="fa fa-pinterest" aria-label="pinterest"></a>
                 </li>
               </ul>
             </div>
@@ -151,7 +151,7 @@
           },
         ],
       }
-    },
+    }
   }
 
 </script>

@@ -66,6 +66,10 @@ a {
   color: #ffc501 !important;
 }
 
+.color-gold {
+  color: #f0ad4e;
+}
+
 .btn-blue {
   color: white;
   background-color: #3dace1;
@@ -130,6 +134,14 @@ a {
 .small-line {
   padding: 0 30px;
   border-bottom: 3px solid #FF4530;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.deactive {
+  opacity: 0.1 !important;
 }
 
 a.btn {
