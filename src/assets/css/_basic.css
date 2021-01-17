@@ -16,6 +16,7 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .img {
@@ -64,6 +65,18 @@ a {
 
 .color-yellow {
   color: #ffc501 !important;
+}
+
+.color-dark {
+  color: #5f6467 !important;
+}
+
+.color-red {
+  color: #fd3635 !important;
+}
+
+.color-darkblue {
+  color: #0d6efd !important;
 }
 
 .color-gold {

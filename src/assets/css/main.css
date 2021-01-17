@@ -18,6 +18,7 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .img {
@@ -66,6 +67,18 @@ a {
 
 .color-yellow {
   color: #ffc501 !important;
+}
+
+.color-dark {
+  color: #5f6467 !important;
+}
+
+.color-red {
+  color: #fd3635 !important;
+}
+
+.color-darkblue {
+  color: #0d6efd !important;
 }
 
 .color-gold {
@@ -656,7 +669,63 @@ main #our-apps .ourapps-body #apps-group .app .app-body .app-rating i {
 main #our-apps .ourapps-body #apps-group .app .app-body .app-text {
   font-size: 0.9rem;
 }
+main #our-customers {
+  padding: 3rem 0 1rem 0;
+  background-image: url("/src/assets/img/bg-imgs/bg-subheader-5.jpg");
+  color: white;
+  font-size: 0.9rem;
+}
+main #our-customers img {
+  width: 60px;
+}
+main #our-customers .customers-footer i,
+main #our-customers .customers-footer span {
+  color: #FF4530;
+}
+main #our-customers .customers-footer a {
+  color: #8d8d8d !important;
+}
 
+footer {
+  font-size: 0.9rem;
+  color: gray;
+}
+footer #footer {
+  padding: 3rem 1rem 1rem 1rem;
+  line-height: 24px;
+}
+footer #footer div {
+  margin: auto;
+}
+footer #footer a:hover {
+  color: #FF4530;
+}
+footer #footer .up-footer h6 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+footer #footer .up-footer ul li {
+  margin: 0;
+}
+footer #footer .up-footer .social-group a {
+  position: relative;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+}
+footer #footer .down-footer {
+  border-top: 1px solid rgba(128, 128, 128, 0.253);
+  margin: 2rem 0 0 0;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  footer #footer .up-footer div:first-child {
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 991.98px) {
   main #buy-product .product-group .product:nth-child(even) {
     transform: scale(1.1);

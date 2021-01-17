@@ -19,7 +19,11 @@
         <our-blog></our-blog>
         <join-our></join-our>
         <our-apps></our-apps>
+        <our-customers></our-customers>
       </main>
+      <footer>
+        <footer-block></footer-block>
+      </footer>
     </div>
   </div>
 </template>
@@ -40,6 +44,8 @@
   import OurBlog from './components/Main/OurBlog'
   import JoinOur from './components/Main/JoinOur'
   import OurApps from './components/Main/OurApps'
+  import OurCustomers from './components/Main/OurCustomers'
+  import Footer from './components/Footer/Footer'
   export default {
     name: 'app',
     components: {
@@ -57,7 +63,9 @@
       "question-answer": Question,
       "our-blog": OurBlog,
       "join-our": JoinOur,
-      "our-apps": OurApps
+      "our-apps": OurApps,
+      "our-customers":OurCustomers,
+      "footer-block":Footer
     },
     data() {
       return {
