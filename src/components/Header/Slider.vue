@@ -39,7 +39,7 @@
         sliderEffect:true,
         sliders: [{
             id: 0,
-            title: "Welcome To Pasific Studio",
+            title: "Welcome To Simurg16 Development",
             caption: "Wordpress. Joomla. eCommerce. HTML. Etc.",
             img: "/src/assets/img/slide-imgs/banner-1.jpg",
             alt: "",
