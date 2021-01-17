@@ -6,47 +6,23 @@
     </div>
     <div class="company-body container-fluid">
       <div class="our-ratings row">
-        <div class="col-6">
+        <div class="col-6" >
           <div>
-           <number ref="number1" 
-              class="color-success"
-              :from="0" 
-              :to="OurRatings.installs" 
-              :duration="5" 
-              :delay="4"
-                easing="Power1.easeOut" />
+            <span class="color-success" data-aos="zoom-in" data-aos-duration="2000"> {{OurRatings.installs}}</span>
             <p>Installs</p>
           </div>
           <div>
-              <number ref="number1" 
-               class="color-blue"
-              :from="0" 
-              :to="OurRatings.happyClients" 
-              :duration="5" 
-              :delay="4"
-                easing="Power1.easeOut" />
+            <span class="color-blue" data-aos="zoom-in" data-aos-duration="2000"> {{OurRatings.happyClients}}</span>
             <p>Happy Clients</p>
           </div>
         </div>
         <div class="col-6">
           <div>
-             <number ref="number1" 
-              class="color-cyan"
-              :from="0" 
-              :to="OurRatings.coffeeCups" 
-              :duration="5" 
-              :delay="4"
-                easing="Power1.easeOut" />
+            <span class="color-cyan" data-aos="zoom-in" data-aos-duration="2000"> {{OurRatings.coffeeCups}}</span>
             <p>Coffee Cups</p>
           </div>
           <div>
-            <number ref="number1" 
-              class="color-yellow"
-              :from="0" 
-              :to="OurRatings.reviews" 
-              :duration="5" 
-              :delay="4"
-                easing="Power1.easeOut" />
+            <span class="color-yellow" data-aos="zoom-in" data-aos-duration="2000"> {{OurRatings.reviews}}</span>
             <p>Reviews</p>
           </div>
         </div>
@@ -80,7 +56,6 @@
         }
       }
     }
-
   }
 
 </script>
